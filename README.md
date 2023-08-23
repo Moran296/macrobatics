@@ -66,8 +66,7 @@ I would like to be able to call different functions based on the number of argum
 * Bonus - show real example of this technique in nrf log?
 
 ### Overloading by type of argument
-WIP
-- talk about _Generic in C11
+- Talk about _Generic in C11
 
 ## Code generation with X macros
 WIP
