@@ -7,6 +7,14 @@ int x1 = COUNT_ARGS(x);
 int x2 = COUNT_ARGS(x, y);
 int x3 = COUNT_ARGS(x, y, z);
 
+
+
+
+
+
+
+
+
 // what happened here? how do we solve this?..
 int x0 = COUNT_ARGS();
 /* __VA_ARGS__ is empty but we still have a comma
