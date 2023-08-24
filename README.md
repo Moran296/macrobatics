@@ -18,6 +18,7 @@ The talk will be given to embedded developers in the company I work for. The tal
     - [Overloading by number of arguments](#overloading-by-number-of-arguments)
     - [Overloading by type of argument](#overloading-by-type-of-argument)
   - [Code generation with X macros](#code-generation-with-x-macros)
+  - [Control flow - Coroutines](#control-flow---coroutines)
   - [Bonus](#bonus)
 
 
@@ -67,6 +68,8 @@ I would like to be able to call different functions based on the number of argum
 
 ### Overloading by type of argument
 - Talk about _Generic in C11
+- Show how we can use the preprocessor to overload a macro according to the type of the argument
+- We can do it in c99 using builtin types
 
 ## Code generation with X macros
 WIP
@@ -74,6 +77,12 @@ WIP
 - show real examples of X macros
     - ShoobyDB
     - Protobuf
+
+## Control flow - Coroutines
+- We can use the preprocessor to create coroutines
+- Coroutines are functions that can be paused and resumed
+- We can use the preprocessor to create a state machine that will run the function in steps
+- We use the switch case hack and static variables
 
 ## Bonus
 If we have time we can also show the following:
