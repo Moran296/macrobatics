@@ -86,7 +86,8 @@ WIP
 
 ## Bonus
 If we have time we can also show the following:
-- [headerlessc](https://github.com/milgra/headerlessc) with #if __INCLUDE_LEVEL__ == 0
+- [headerlessc](https://github.com/milgra/headerlessc) with #if \_\_INCLUDE_LEVEL__ == 0
+- \_\_COUNTER__
 - #line
 - default args with ... (show shoobyDB limits)
 
