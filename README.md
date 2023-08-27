@@ -28,9 +28,9 @@ The talk will be given to embedded developers in the company I work for. The tal
 - A small quiz about the top of the iceberg!
 - Show the basics to make sure we are all on the same page
 *  **Don't forget to explain how to compile only in the preprocessor with -P -E**
-### the_basics_1.c
+### [the_basics_1.c](./the_basics_1.c)
  - macro traps, paranthesis, do while(0)
-### the_basics_2.c
+### [the_basics_2.c](./the_basics_2.c)
  - stringification, token pasting, variadic macros
 
 
@@ -48,37 +48,38 @@ connect_to_server(.host = "google.com", .port = 80);
 connect_to_server(.host = "google.com");
 ```
 
-* Show named_params.c to demonstrate the power of the variadic macros
+* Show [named_params.c](./named_params.c) to demonstrate the power of the variadic macros
 
 ---
 ## Overloading functions
 
-### Overloading by number of arguments
+### [Overloading by number of arguments](./overload_by_arg_num.c)
 
 I would like to be able to call different functions based on the number of arguments I pass to the macro.
 ```c
     Add(1, 2) ==> Add_2(int a, int b)
     Add(1, 2, 3) ==> Add_3(int a, int b, int c)
 ```
-* first step let's look at count_args.c to see how we can count the number of arguments
+* first step let's look at [count_args.c](./count_args.c) to see how we can count the number of arguments
     - Here we will learn about the __VA_OPT__ feature
-* second step let's look at overload_by_arg_num.c to see how we can use the number of arguments to call different functions
+* second step let's look at [overload_by_arg_num.c](./overload_by_arg_num.c) to see how we can use the number of arguments to call different functions
     - Here we will learn about the phases of the preprocessor work
 * Bonus - show real example of this technique in nrf log?
 
-### Overloading by type of argument
+### [Overloading by type of argument](./overload_by_arg_type.c)
 - Talk about _Generic in C11
 - Show how we can use the preprocessor to overload a macro according to the type of the argument
 - We can do it in c99 using builtin types
 
-## Code generation with X macros
-WIP
+## Code generation with [X macros](./xmacros1.c)
+- Talk about code generation, advantages and disadvantages
+- Use xmacros to show generation of enum to string macro
 - talk about X macros
 - show real examples of X macros
     - ShoobyDB
     - Protobuf
 
-## Control flow - Coroutines
+## Control flow - [Coroutines](./coroutines.c)
 - We can use the preprocessor to create coroutines
 - Coroutines are functions that can be paused and resumed
 - We can use the preprocessor to create a state machine that will run the function in steps
