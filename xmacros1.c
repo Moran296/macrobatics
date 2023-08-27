@@ -50,7 +50,7 @@ STRINGED_ENUM(eColor);
     /*ENUM LIST will not be expanded as it got no arguments..*/ \
     enum ENUM_LIST                                              \
     {                                                           \
-        ENUM_LIST(JUST_ENUM)                                    \
+        ENUM_LIST(X_JUST_ENUM)                                    \
             NUM                                                 \
     };                                                          \
     /* now let's define the to_string function */               \
@@ -64,9 +64,9 @@ STRINGED_ENUM(eColor);
         }                                                       \
     }
 
-#define JUST_ENUM(X) X,
-#define CASE_AND_STRINGIFY(X) \
-    case X:                   \
-        return #X;
+#define X_JUST_ENUM(ENUM) ENUM,
+#define X_CASE_AND_STRINGIFY(ENUM) \
+    case ENUM:                   \
+        return #ENUM;
 
 // lets try to add const hex value to each enum!!
