@@ -29,13 +29,13 @@ int add_4(int a, int b, int c, int d) {
 
 
 // What does this macro generates? why doesnt it work?
-#define ADD_NOT_WORKING(...) CAT2(add_##COUNT_ARGS(__VA_ARGS__))(__VA_ARGS__)
+#define ADD_NOT_WORKING(...) add_##COUNT_ARGS(__VA_ARGS__)(__VA_ARGS__)
 
 // Let's explain how ## is expanded:
 // https://en.wikipedia.org/wiki/C_preprocessor#:~:text=to%20the%20division.-,Order%20of%20expansion,-%5Bedit%5D
-#define CAT_2_(a, b) a##b
-#define CAT_2(a, b) CAT_2_(a, b)
-#define ADD_WORKING(...) CAT_2(add_, COUNT_ARGS(__VA_ARGS__))(__VA_ARGS__)
+// #define CAT_2_(a, b) a##b
+// #define CAT_2(a, b) CAT_2_(a, b)
+// #define ADD_WORKING(...) CAT_2(add_, COUNT_ARGS(__VA_ARGS__))(__VA_ARGS__)
 
 
 int main() {
