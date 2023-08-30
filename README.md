@@ -1,5 +1,7 @@
 
-# C/C++ Macrobatics - A talk about the preprocessor WIP
+# C/C++ Macrobatics - A talk about the preprocessor
+
+Click [here](https://www.youtube.com/watch?v=pLnRvQF3Fbg&t=33s) for the lecture in hebrew :)
 
 ## Abstract
 This is a talk about the C/C++ preprocessor. It will cover the basics of the preprocessor and some more advanced stuff. The goal is to show how the preprocessor can be used to do some cool stuff and what to expect when reading code that uses the preprocessor.
